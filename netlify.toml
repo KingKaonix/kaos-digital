@@ -1,5 +1,5 @@
 [build]
-  command = "npm install --legacy-peer-deps && npm run build"
+  command = "npm ci --legacy-peer-deps && CI=false ng build"
   publish = "dist/kaos-digital"
   functions = "netlify/functions"
 
