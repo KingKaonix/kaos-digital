@@ -1,171 +1,230 @@
 <div class="wrapper">
-    <div class="page-header page-header-small">
-        <div class="page-header-image rellax-header" data-rellax-speed="-8" style="background-image: url('assets/img/bg6.jpg');">
-        </div>
-        <div class="container">
-            <div class="content-center">
-                <h1 class="title">This is our great company.</h1>
-                <div class="text-center">
-                  <a href="#pablo" class="btn btn-primary btn-icon btn-round">
-                    <i class="fab fa-facebook-square"></i>
-                  </a>
-                  <a href="#pablo" class="btn btn-primary btn-icon btn-round">
-                    <i class="fab fa-twitter"></i>
-                  </a>
-                  <a href="#pablo" class="btn btn-primary btn-icon btn-round">
-                    <i class="fab fa-google-plus"></i>
-                  </a>
-                </div>
-            </div>
-        </div>
+  <nav class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent" color-on-scroll="500">
+    <div class="container">
+      <div class="navbar-translate">
+        <a class="navbar-brand" routerLink="/">
+          <i class="now-ui-icons business_badge"></i> Kaos Digital
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-bar bar1"></span>
+          <span class="navbar-toggler-bar bar2"></span>
+          <span class="navbar-toggler-bar bar3"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" data-nav-image="assets/img/blurred-image-1.jpg" data-color="orange">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="#services">
+              <i class="now-ui-icons design_app"></i>
+              <p>Services</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="#about">
+              <i class="now-ui-icons users_single-02"></i>
+              <p>About</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="#contact">
+              <i class="now-ui-icons ui-1_email-85"></i>
+              <p>Contact</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-primary btn-round" routerLink="/auth/sign-in">
+              <i class="now-ui-icons users_single-02"></i>
+              <p>Get Started</p>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="section section-about-us">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 ml-auto mr-auto text-center">
-                    <h2 class="title">Who we are?</h2>
-                    <h5 class="description">According to the National Oceanic and Atmospheric Administration, Ted, Scambos, NSIDClead scentist, puts the potentially record low maximum sea ice extent tihs year down to low ice extent in the Pacific and a late drop in ice extent in the Barents Sea.</h5>
-                </div>
-            </div>
-            <div class="separator separator-primary"></div>
-            <div class="section-story-overview">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="image-container image-left" style="background-image: url('assets/img/login.jpg')">
-                            <!-- First image on the left side -->
-                            <p class="blockquote blockquote-primary">"Over the span of the satellite record, Arctic sea ice has been declining significantly, while sea ice in the Antarctichas increased very slightly"
-                                <br>
-                                <br>
-                                <small>-NOAA</small>
-                            </p>
-                        </div>
-                        <!-- Second image on the left side of the article -->
-                        <div class="image-container" style="background-image: url('assets/img/bg3.jpg')"></div>
-                    </div>
-                    <div class="col-md-5">
-                        <!-- First image on the right side, above the article -->
-                        <div class="image-container image-right" style="background-image: url('assets/img/bg1.jpg')"></div>
-                        <h3>So what does the new record for the lowest level of winter ice actually mean</h3>
-                        <p>The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and that process will continue whatever happens with climate change. Even if the Arctic continues to be one of the fastest-warming regions of the world, it will always be plunged into bitterly cold polar dark every winter. And year-by-year, for all kinds of natural reasons, there’s huge variety of the state of the ice.
-                        </p>
-                        <p>
-                            For a start, it does not automatically follow that a record amount of ice will melt this summer. More important for determining the size of the annual thaw is the state of the weather as the midnight sun approaches and temperatures rise. But over the more than 30 years of satellite records, scientists have observed a clear pattern of decline, decade-by-decade.
-                        </p>
-                        <p>The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and that process will continue whatever happens with climate change. Even if the Arctic continues to be one of the fastest-warming regions of the world, it will always be plunged into bitterly cold polar dark every winter. And year-by-year, for all kinds of natural reasons, there’s huge variety of the state of the ice.
-                        </p>
-                    </div>
-                </div>
-            </div>
+  </nav>
+
+  <div class="page-header page-header-small" style="background-image: url('assets/img/bg6.jpg');">
+    <div class="container">
+      <div class="content-center">
+        <h1 class="title">Kaos Digital</h1>
+        <h3 class="description">AI & IT Systems for Local Business</h3>
+        <div class="text-center mt-4">
+          <a routerLink="/auth/sign-up" class="btn btn-primary btn-icon btn-round btn-lg">
+            <i class="now-ui-icons arrows-1_cloud-download-93"></i> Start Free Trial
+          </a>
+          <a routerLink="#contact" class="btn btn-white btn-icon btn-round btn-lg ml-3">
+            <i class="now-ui-icons ui-1_email-85"></i> Contact Us
+          </a>
         </div>
+      </div>
     </div>
-    <div class="section section-team text-center">
-        <div class="container">
-            <h2 class="title">Here is our team</h2>
-            <div class="team">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="team-player">
-                            <img src="assets/img/avatar.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
-                            <h4 class="title">Romina Hadid</h4>
-                            <p class="category text-primary">Model</p>
-                            <p class="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
-                                <a href="#">links</a> for people to be able to follow them outside the site.</p>
-                                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-twitter"></i></a>
-                                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-instagram"></i></a>
-                                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-facebook-square"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="team-player">
-                            <img src="assets/img/ryan.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
-                            <h4 class="title">Ryan Tompson</h4>
-                            <p class="category text-primary">Designer</p>
-                            <p class="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
-                                <a href="#">links</a> for people to be able to follow them outside the site.</p>
-                                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-twitter"></i></a>
-                                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-linkedin"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="team-player">
-                            <img src="assets/img/eva.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
-                            <h4 class="title">Eva Jenner</h4>
-                            <p class="category text-primary">Fashion</p>
-                            <p class="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
-                                <a href="#">links</a> for people to be able to follow them outside the site.</p>
-                                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-google-plus"></i></a>
-                                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-youtube"></i></a>
-                                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-twitter"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  </div>
+
+  <div class="section section-features" id="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 ml-auto mr-auto text-center">
+          <h2 class="title">Four Automated Products</h2>
+          <h5 class="description">Everything local businesses need to run online — websites, booking, AI chat, and reviews. All automated, all in one place.</h5>
         </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="info info-horizontal">
+            <div class="icon icon-primary">
+              <i class="now-ui-icons design_bullet-list-67"></i>
+            </div>
+            <div class="description">
+              <h4 class="info-title">Websites</h4>
+              <p>Modern, fast websites built for local SEO. Includes hosting, SSL, and easy content updates.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info info-horizontal">
+            <div class="icon icon-primary">
+              <i class="now-ui-icons time_alarm"></i>
+            </div>
+            <div class="description">
+              <h4 class="info-title">Booking System</h4>
+              <p>Online scheduling with calendar sync, automated reminders, and payment integration.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info info-horizontal">
+            <div class="icon icon-primary">
+              <i class="now-ui-icons tech_controller"></i>
+            </div>
+            <div class="description">
+              <h4 class="info-title">AI Chatbot</h4>
+              <p>24/7 customer support trained on your business. Answers questions, captures leads, books appointments.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info info-horizontal">
+            <div class="icon icon-primary">
+              <i class="now-ui-icons emoticons_satisfied"></i>
+            </div>
+            <div class="description">
+              <h4 class="info-title">Review Management</h4>
+              <p>Automated review requests, response drafting, and reputation monitoring across platforms.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="section section-contact-us text-center">
-        <div class="container">
-            <h2 class="title">Want to work with us?</h2>
-            <p class="description">Your project is very important to us.</p>
-            <div class="row">
-                <div class="col-lg-6 text-center col-md-8 ml-auto mr-auto">
-                  <div class="input-group input-lg" [ngClass]="{'input-group-focus':focus===true}">
-                    <div class="input-group-prepend" >
-                      <span class="input-group-text">
-                          <i class="now-ui-icons users_circle-08"></i>
-                      </span>
-                    </div>
-                      <input type="text" class="form-control" placeholder="Left Font Awesome Icon" (focus)="focus=true" (blur)="focus=false">
-                  </div>
-                  <div class="input-group input-lg" [ngClass]="{'input-group-focus':focus1===true}">
-                    <div class="input-group-prepend" >
-                      <span class="input-group-text">
-                            <i class="now-ui-icons ui-1_email-85"></i>
-                      </span>
-                    </div>
-                      <input type="text" class="form-control" placeholder="Left Font Awesome Icon" (focus)="focus1=true" (blur)="focus1=false">
-                  </div>
-                    <div class="textarea-container">
-                        <textarea class="form-control" name="name" rows="4" cols="80" placeholder="Type a message..."></textarea>
-                    </div>
-                    <div class="send-button">
-                        <a href="#pablo" class="btn btn-primary btn-round btn-block btn-lg">Send Message</a>
-                    </div>
-                </div>
-            </div>
+  </div>
+
+  <div class="section section-about-us" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 ml-auto mr-auto text-center">
+          <h2 class="title">Hands-On Consulting</h2>
+          <h5 class="description">Not just software — we work with your team to implement, optimize, and scale. From setup to ongoing strategy.</h5>
         </div>
+      </div>
+      <div class="separator separator-primary"></div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="image-container image-left" style="background-image: url('assets/img/bg1.jpg')">
+            <p class="blockquote blockquote-primary">"We don't just hand you tools. We help you build the systems that run your business."
+              <br><br>
+              <small>- Kaos Digital Team</small>
+            </p>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <h3>Move Faster with Expert Guidance</h3>
+          <p>Most agencies sell you a website and disappear. We stay — helping you automate operations, reduce manual work, and grow revenue.</p>
+          <p>Our consulting covers:</p>
+          <ul class="list-unstyled">
+            <li><i class="now-ui-icons ui-1_check text-primary mr-2"></i> Process automation audit</li>
+            <li><i class="now-ui-icons ui-1_check text-primary mr-2"></i> Tool selection & integration</li>
+            <li><i class="now-ui-icons ui-1_check text-primary mr-2"></i> Team training & documentation</li>
+            <li><i class="now-ui-icons ui-1_check text-primary mr-2"></i> Ongoing optimization</li>
+          </ul>
+        </div>
+      </div>
     </div>
-    <footer class="footer footer-default">
-        <div class="container">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="https://www.creative-tim.com">
-                            Creative Tim
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.creative-tim.com/about-us">
-                            About Us
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://blog.creative-tim.com">
-                            Blog
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/creativetimofficial/now-ui-kit/blob/master/LICENSE.md">
-                            MIT License
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="copyright">
-                &copy;
-                {{data | date: 'yyyy'}}, Designed by
-                <a href="https://www.invisionapp.com" target="_blank">Invision</a>. Coded by
-                <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a>.
+  </div>
+
+  <div class="section section-team text-center" id="contact">
+    <div class="container">
+      <h2 class="title">Ready to Automate?</h2>
+      <p class="description">Book a free consultation. We'll audit your current setup and show you exactly what to automate first.</p>
+      <div class="row">
+        <div class="col-lg-6 text-center col-md-8 ml-auto mr-auto">
+          <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+            <div class="input-group input-lg" [ngClass]="{'input-group-focus':focus===true}">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                    <i class="now-ui-icons users_circle-08"></i>
+                </span>
+              </div>
+                <input type="text" class="form-control" placeholder="Your Name" name="name" ngModel required (focus)="focus=true" (blur)="focus=false">
             </div>
+            <div class="input-group input-lg" [ngClass]="{'input-group-focus':focus1===true}">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                      <i class="now-ui-icons ui-1_email-85"></i>
+                </span>
+              </div>
+                <input type="email" class="form-control" placeholder="Email Address" name="email" ngModel required (focus)="focus1=true" (blur)="focus1=false">
+            </div>
+            <div class="input-group input-lg" [ngClass]="{'input-group-focus':focus2===true}">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                      <i class="now-ui-icons tech_mobile"></i>
+                </span>
+              </div>
+                <input type="tel" class="form-control" placeholder="Phone (optional)" name="phone" ngModel (focus)="focus2=true" (blur)="focus2=false">
+            </div>
+            <div class="textarea-container">
+                <textarea class="form-control" name="message" rows="4" placeholder="Tell us about your business..." ngModel></textarea>
+            </div>
+            <div class="send-button">
+                <button type="submit" class="btn btn-primary btn-round btn-block btn-lg" [disabled]="f.invalid">
+                  <i class="now-ui-icons arrows-1_share-66 mr-2"></i> Request Consultation
+                </button>
+            </div>
+          </form>
         </div>
-    </footer>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer footer-default">
+    <div class="container">
+      <nav>
+        <ul>
+          <li>
+            <a routerLink="/">
+              Kaos Digital
+            </a>
+          </li>
+          <li>
+            <a routerLink="#services">
+              Services
+            </a>
+          </li>
+          <li>
+            <a routerLink="#about">
+              About
+            </a>
+          </li>
+          <li>
+            <a routerLink="#contact">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="copyright">
+        &copy;
+        {{currentYear}}, Made with
+        <i class="now-ui-icons emoticons_satisfied text-danger"></i> by Kaos Digital
+      </div>
+    </div>
+  </footer>
 </div>
