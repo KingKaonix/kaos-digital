@@ -1,9 +1,10 @@
 [build]
   command = "npm ci --legacy-peer-deps && CI=false ng build"
-  publish = "dist"
+  publish = "dist/kaos-digital"
+  functions = "netlify/functions"
 
 [build.environment]
-  NODE_VERSION = "20"
+  NODE_VERSION = "18"
   NPM_FLAGS = "--legacy-peer-deps"
 
 [[redirects]]

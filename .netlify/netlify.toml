@@ -1,21 +1,16 @@
-headersOrigin = "config"
-redirectsOrigin = "config"
 functionsDirectory = "/data/data/com.termux/files/home/kaosnet-site/netlify/functions"
 functionsDirectoryOrigin = "config-v1"
+headersOrigin = "config"
+redirectsOrigin = "config"
+plugins = []
 
 [functions]
 
 [functions."*"]
 
-[[plugins]]
-origin = "default"
-package = "@netlify/angular-runtime"
-
-[plugins.inputs]
-
 [build]
-publish = "/data/data/com.termux/files/home/kaosnet-site/dist"
-publishOrigin = "inline"
+publish = "/data/data/com.termux/files/home/kaosnet-site/dist/kaos-digital"
+publishOrigin = "config"
 commandOrigin = "config"
 command = "npm ci --legacy-peer-deps && CI=false ng build"
 functions = "/data/data/com.termux/files/home/kaosnet-site/netlify/functions"
