@@ -1,14 +1,44 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './features/auth/login/login.component';
+import { SignupComponent } from './features/auth/signup/signup.component';
+import { DashboardComponent } from './features/dashboard/dashboard.component';
+import { GenerateComponent } from './features/generate/generate.component';
+import { GalleryComponent } from './features/templates/gallery/gallery.component';
+import { TemplateEditComponent } from './features/templates/edit/template-edit.component';
+import { NotFoundComponent } from './features/not-found/not-found.component';
+import { MarketingHomeComponent } from './features/marketing/home/home.component';
+import { MarketingAboutComponent } from './features/marketing/about/about.component';
+import { MarketingServicesComponent } from './features/marketing/services/services.component';
+import { MarketingPricingComponent } from './features/marketing/pricing/pricing.component';
+import { MarketingProductsComponent } from './features/marketing/products/products.component';
+import { MarketingContactComponent } from './features/marketing/contact/contact.component';
+import { authGuard } from './core/auth.guard';
 
-// Phase 8: kaosnet-site marketing routes (single-page landing with anchor sections).
-// Phase 9 will replace these with dedicated components and wire /generator to the
-// AI Template Generator app.
 export const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'services', component: HomeComponent },
-  { path: 'about', component: HomeComponent },
-  { path: 'contact', component: HomeComponent },
-  { path: 'generator', component: HomeComponent }, // placeholder; wired to generator in Phase 9
-  { path: '**', component: HomeComponent },
+  // Marketing (public) — kaosnet site content integrated at root
+  { path: '', component: MarketingHomeComponent },
+  { path: 'about', component: MarketingAboutComponent },
+  { path: 'services', component: MarketingServicesComponent },
+  { path: 'pricing', component: MarketingPricingComponent },
+  { path: 'products', component: MarketingProductsComponent },
+  { path: 'contact', component: MarketingContactComponent },
+
+  // Auth (shared — site visitors + generator users)
+  { path: 'login', component: LoginComponent },
+  { path: 'signup', component: SignupComponent },
+
+  // Generator (auth-gated) — AI Template Generator under /generator
+  {
+    path: 'generator',
+    canActivate: [authGuard],
+    children: [
+      { path: '', component: DashboardComponent },
+      { path: 'dashboard', component: DashboardComponent },
+      { path: 'generate', component: GenerateComponent },
+      { path: 'gallery', component: GalleryComponent },
+      { path: 'templates/:id/edit', component: TemplateEditComponent },
+    ],
+  },
+
+  { path: '**', component: NotFoundComponent },
 ];

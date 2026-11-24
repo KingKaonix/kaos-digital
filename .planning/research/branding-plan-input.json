@@ -1,0 +1,30 @@
+{
+  "ecosystem": "npm",
+  "config": { "exa_search": true, "brave_search": true, "firecrawl": true, "tavily_search": true },
+  "questions": [
+    {
+      "text": "common pitfalls mistakes adding white-label visual branding to existing Angular application",
+      "kind": "web"
+    },
+    {
+      "text": "Bootstrap 5 Sass theme overrides CSS variables dark mode customizing primary color Angular best practices mistakes",
+      "kind": "docs",
+      "library": "bootstrap",
+      "version": "5.3.9"
+    },
+    {
+      "text": "Angular global styles styles.scss component CSS encapsulation theme consistency lazy loaded routes standalone components",
+      "kind": "docs",
+      "library": "@angular/core",
+      "version": "22.3.0"
+    },
+    {
+      "text": "favicon multiple sizes apple-touch-icon Android manifest best practices wrong favicon common mistakes",
+      "kind": "web"
+    },
+    {
+      "text": "CSS custom properties design tokens white-label theming strategy override Bootstrap variables pitfalls",
+      "kind": "web"
+    }
+  ]
+}

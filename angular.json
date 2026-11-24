@@ -6,7 +6,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "kaos-app-22": {
+    "ai-template-generator": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -87,10 +87,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "kaos-app-22:build:production"
+              "buildTarget": "ai-template-generator:build:production"
             },
             "development": {
-              "buildTarget": "kaos-app-22:build:development"
+              "buildTarget": "ai-template-generator:build:development"
             }
           },
           "defaultConfiguration": "development"

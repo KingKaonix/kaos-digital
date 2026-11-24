@@ -1,0 +1,34 @@
+{
+  "ecosystem": "npm",
+  "config": { "exa_search": true, "brave_search": true, "firecrawl": true, "tavily_search": true },
+  "questions": [
+    {
+      "text": "kaosnet.org visual branding color palette slate-900 background Inter font logo design",
+      "kind": "web"
+    },
+    {
+      "text": "Google Fonts Inter font self-hosting vs CDN Angular integration best practices",
+      "kind": "web"
+    },
+    {
+      "text": "Bootstrap 5 custom theming CSS variables Sass override color palette dark mode best practices Angular",
+      "kind": "docs",
+      "library": "bootstrap",
+      "version": "5.3.9"
+    },
+    {
+      "text": "Angular standalone component global styles styles.scss favicon logo asset integration angular.json",
+      "kind": "docs",
+      "library": "@angular/core",
+      "version": "22.3.0"
+    },
+    {
+      "text": "CSS theming library color palette design tokens Tailwind vs CSS variables what not to add Bootstrap 5 overlay",
+      "kind": "web"
+    },
+    {
+      "text": "favicon generation multiple sizes apple touch icon Android Chrome best practices HTML head Angular index.html",
+      "kind": "web"
+    }
+  ]
+}

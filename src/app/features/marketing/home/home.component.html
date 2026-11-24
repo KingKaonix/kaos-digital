@@ -1,0 +1,141 @@
+<!-- Kaos Digital — marketing landing (ported from kaosnet-site) -->
+<header class="kaos-bg kaos-text text-center py-5">
+  <div class="container pt-4">
+    <h1 class="display-4 fw-bold mb-3">Kaos Digital</h1>
+    <h3 class="kaos-text-secondary mb-4">AI &amp; IT Systems for Local Business</h3>
+    <div class="d-flex gap-2 justify-content-center">
+      <a class="btn btn-primary btn-lg" routerLink="/generator">Start Free Trial</a>
+      <a class="btn btn-outline-light btn-lg" routerLink="/#contact">Contact Us</a>
+    </div>
+  </div>
+</header>
+
+<section id="services" class="kaos-bg kaos-text py-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center mb-5">
+        <h2 class="fw-bold mb-3">Four Automated Products</h2>
+        <p class="kaos-text-secondary">Everything local businesses need to run online — websites, booking, AI chat, and reviews. All automated, all in one place.</p>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-3">
+        <div class="kaos-card p-4 h-100 text-center border-0">
+          <div class="icon mb-3" style="font-size:2rem; color: var(--kaos-accent-primary);">🌐</div>
+          <h4 class="info-title fw-bold mb-2">Websites</h4>
+          <p class="kaos-text-secondary small">Modern, fast websites built for local SEO. Includes hosting, SSL, and easy content updates.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="kaos-card p-4 h-100 text-center border-0">
+          <div class="icon mb-3" style="font-size:2rem; color: var(--kaos-accent-primary);">📅</div>
+          <h4 class="info-title fw-bold mb-2">Booking System</h4>
+          <p class="kaos-text-secondary small">Online scheduling with calendar sync, automated reminders, and payment integration.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="kaos-card p-4 h-100 text-center border-0">
+          <div class="icon mb-3" style="font-size:2rem; color: var(--kaos-accent-primary);">🤖</div>
+          <h4 class="info-title fw-bold mb-2">AI Chatbot</h4>
+          <p class="kaos-text-secondary small">24/7 customer support trained on your business. Answers questions, captures leads, books appointments.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="kaos-card p-4 h-100 text-center border-0">
+          <div class="icon mb-3" style="font-size:2rem; color: var(--kaos-accent-primary);">⭐</div>
+          <h4 class="info-title fw-bold mb-2">Review Management</h4>
+          <p class="kaos-text-secondary small">Automated review requests, response drafting, and reputation monitoring across platforms.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="kaos-bg kaos-text py-5">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-6 order-lg-2">
+        <div class="kaos-card p-4 border-0">
+          <h3 class="fw-bold mb-3">Move Faster with Expert Guidance</h3>
+          <p class="kaos-text-secondary mb-3">Most agencies sell you a website and disappear. We stay — helping you automate operations, reduce manual work, and grow revenue.</p>
+          <p class="kaos-text-secondary mb-3">Our consulting covers:</p>
+          <ul class="list-unstyled kaos-text-secondary mb-0">
+            <li class="mb-2"><i class="bi bi-check-circle me-2" style="color: var(--kaos-accent-primary);"></i> Process automation audit</li>
+            <li class="mb-2"><i class="bi bi-check-circle me-2" style="color: var(--kaos-accent-primary);"></i> Tool selection &amp; integration</li>
+            <li class="mb-2"><i class="bi bi-check-circle me-2" style="color: var(--kaos-accent-primary);"></i> Team training &amp; documentation</li>
+            <li class="mb-2"><i class="bi bi-check-circle me-2" style="color: var(--kaos-accent-primary);"></i> Ongoing optimization</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-6 order-lg-1 text-center">
+        <div class="kaos-card p-4 border-0">
+          <h2 class="fw-bold mb-3">Hands-On Consulting</h2>
+          <p class="kaos-text-secondary mb-4">Not just software — we work with your team to implement, optimize, and scale. From setup to ongoing strategy.</p>
+          <blockquote class="blockquote blockquote-primary p-4 kaos-card border-0">
+            <p class="mb-2">"We don't just hand you tools. We help you build the systems that run your business."</p>
+            <footer class="blockquote-footer kaos-text-secondary">- Kaos Digital Team</footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="kaos-bg kaos-text py-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-6 col-md-8">
+        <div class="kaos-card p-4 border-0">
+          <h2 class="fw-bold mb-3 text-center">Ready to Automate?</h2>
+          <p class="kaos-text-secondary text-center mb-4">Book a free consultation. We'll audit your current setup and show you exactly what to automate first.</p>
+          <form (ngSubmit)="onSubmit($event)" #f="ngForm" novalidate>
+            <div class="row g-3">
+              <div class="col-12">
+                <label class="form-label kaos-text">Your Name</label>
+                <input type="text" class="form-control kaos-form-control" placeholder="Your Name" name="name" ngModel required />
+              </div>
+              <div class="col-12">
+                <label class="form-label kaos-text">Email Address</label>
+                <input type="email" class="form-control kaos-form-control" placeholder="Email Address" name="email" ngModel required />
+              </div>
+              <div class="col-12">
+                <label class="form-label kaos-text">Phone (optional)</label>
+                <input type="tel" class="form-control kaos-form-control" placeholder="Phone (optional)" name="phone" ngModel />
+              </div>
+              <div class="col-12">
+                <label class="form-label kaos-text">Message</label>
+                <textarea class="form-control kaos-form-control" name="message" rows="4" placeholder="Tell us about your business..." ngModel></textarea>
+              </div>
+            </div>
+            <div class="text-center mt-4">
+              <button type="submit" class="btn btn-primary btn-lg px-5" [disabled]="f.invalid">Request Consultation</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="kaos-bg kaos-text py-4 border-top">
+  <div class="container">
+    <div class="row justify-content-between align-items-center">
+      <div class="col-auto mb-3">
+        <a class="navbar-brand d-flex align-items-center kaos-link" routerLink="/">
+          <img src="assets/logo.png" alt="Kaos Digital" height="28" class="me-2">
+          <span class="fw-bold">Kaos Digital</span>
+        </a>
+      </div>
+      <div class="col-auto mb-3">
+        <nav class="d-flex gap-3">
+          <a class="kaos-link text-decoration-none kaos-text-secondary small" routerLink="/#services">Services</a>
+          <a class="kaos-link text-decoration-none kaos-text-secondary small" routerLink="/#about">About</a>
+          <a class="kaos-link text-decoration-none kaos-text-secondary small" routerLink="/#contact">Contact</a>
+        </nav>
+      </div>
+      <div class="col-auto mb-3">
+        <p class="kaos-text-secondary small mb-0">&copy; {{ currentYear }} Made with <span style="color: var(--kaos-accent-primary);">❤</span> by Kaos Digital</p>
+      </div>
+    </div>
+  </div>
+</footer>

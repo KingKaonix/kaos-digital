@@ -1,5 +1,5 @@
 /*
- * Kaos Design Tokens — single source of truth for v2.0 Kaos Site Integration
+ * Kaos Design Tokens — single source of truth for v1.1 Kaos Brand
  * Never hardcode hex in components; always reference via var(--kaos-*)
  * These overrides load AFTER bootstrap.min.css (see angular.json styles order)
  * so Bootstrap components inherit kaos colors automatically.
@@ -51,7 +51,7 @@ body {
 }
 
 /* ── Kaos dark-theme utility components ───────────────────────────────── */
-/* Page wrapper: full-height dark surface */
+/* Page wrapper: full-height dark surface for auth / standalone pages */
 .kaos-page {
   background-color: var(--kaos-bg-primary);
   color: var(--kaos-text-primary);
@@ -61,7 +61,7 @@ body {
 /* Dark card: replaces Bootstrap white card on dark backgrounds */
 .kaos-card {
   background-color: #0f172a; /* slate-800 — slightly lighter than bg-primary for depth */
-  border: 1px solid rgba(124, 58, 237, 0.3);
+  border: 1px solid rgba(var(--kaos-accent-primary-rgb, 124, 58, 237), 0.3);
   border-radius: 0.5rem;
   color: var(--kaos-text-primary);
 }
@@ -127,6 +127,13 @@ body {
   padding: 3rem 1rem;
 }
 
+.kaos-empty .kaos-empty-icon {
+  color: var(--kaos-accent-primary);
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
 /* Kaos text helpers */
 .kaos-text {
   color: var(--kaos-text-primary);
@@ -155,10 +162,4 @@ body {
 .btn-outline-light:hover {
   background-color: var(--kaos-text-primary);
   color: var(--kaos-bg-primary);
-}
-
-/* Page container for content pages */
-.container {
-  position: relative;
-  z-index: 2;
 }

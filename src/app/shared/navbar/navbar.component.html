@@ -1,0 +1,53 @@
+<nav class="navbar navbar-expand-lg navbar-dark kaos-bg kaos-text shadow-sm">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center kaos-link" routerLink="/">
+      <img src="assets/logo.png" alt="Kaos Digital" height="32" class="me-2">
+      <span class="fw-bold">Kaos Digital</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#kaosNavbar" aria-controls="kaosNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="kaosNavbar">
+      <!-- Marketing (public) -->
+      <ul class="navbar-nav me-auto kaos-text-secondary">
+        <li class="nav-item">
+          <a class="nav-link kaos-link" routerLink="/#services">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link kaos-link" routerLink="/#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link kaos-link" routerLink="/#contact">Contact</a>
+        </li>
+      </ul>
+      <!-- Generator (auth-gated) + auth -->
+      <ul class="navbar-nav ms-auto kaos-text-secondary">
+        @if (isAuthenticated) {
+          <li class="nav-item">
+            <a class="nav-link kaos-link" routerLink="/generator/dashboard">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link kaos-link" routerLink="/generator/generate">Generate</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link kaos-link" routerLink="/generator/gallery">Gallery</a>
+          </li>
+        } @else {
+          <li class="nav-item">
+            <a class="nav-link kaos-link" routerLink="/login">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link kaos-link" routerLink="/signup">Sign up</a>
+          </li>
+        }
+        <li class="nav-item">
+          <a class="nav-link btn btn-primary" *ngIf="isAuthenticated" routerLink="/generator">Generator</a>
+          <a class="nav-link btn btn-outline-light" *ngIf="!isAuthenticated" routerLink="/generator">Get Started</a>
+        </li>
+        <li class="nav-item" *ngIf="isAuthenticated">
+          <a class="nav-link kaos-link text-danger" (click)="logout()">Logout</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
