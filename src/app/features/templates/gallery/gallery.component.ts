@@ -1,7 +1,7 @@
 import { Component, inject, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { TemplatesService, Template } from '../../../core/templates.service';
 import { ToastService } from '../../../core/toast.service';
 
@@ -18,7 +18,7 @@ import { ToastService } from '../../../core/toast.service';
 @Component({
   selector: 'app-gallery',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, RouterLink],
   templateUrl: './gallery.component.html',
   styles: []
 })

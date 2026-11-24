@@ -1,4 +1,4 @@
-import { Component, inject, signal, Output, EventEmitter } from '@angular/core';
+import { Component, inject, signal, Output, EventEmitter, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 
@@ -23,7 +23,7 @@ export class PaywallModalComponent {
   readonly visible = signal(false);
 
   /** The paywalled action being attempted (e.g. 'export', 'download-zip'). */
-  action = signal<string>('export');
+  @Input() action = signal<string>('export');
 
   /** Optional reason the user is not entitled (e.g. 'no active subscription'). */
   reason = signal<string | undefined>(undefined);

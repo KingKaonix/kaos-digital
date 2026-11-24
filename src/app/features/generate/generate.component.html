@@ -59,9 +59,9 @@
             <button
               class="btn btn-primary btn-lg"
               (click)="generate()"
-              [disabled]="isLoading || !description.trim()"
+              [disabled]="isLoading() || !description.trim()"
             >
-              @if (isLoading) {
+              @if (isLoading()) {
                 <span class="spinner-border spinner-border-sm me-2"></span>
                 Generating…
               } @else {
@@ -231,7 +231,7 @@
   <!-- Paywall modal (shown when a free user attempts export) -->
   <app-paywall-modal
     *ngIf="showPaywall()"
-    [action]="paywallAction()"
+    [action]="paywallAction"
     (upgrade)="closePaywall()"
     (click)="closePaywall()"
   ></app-paywall-modal>
